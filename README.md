@@ -9,3 +9,4 @@ install package npm
 run dengan : 
   node index.js
 
+<img width="2860" height="1532" alt="image" src="https://github.com/user-attachments/assets/1bc8e4ef-6ee4-48d7-b36d-78e784029d8d" />
