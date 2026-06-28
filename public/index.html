@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DogBot – Ahli Anjing Peliharaan</title>
+  <meta name="description" content="DogBot adalah chatbot canine expert berbasis AI yang siap membantu menjawab semua pertanyaan seputar anjing peliharaan Anda."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <!-- Animated background paws -->
+  <div class="bg-paws" aria-hidden="true">
+    <span class="paw paw-1">🐾</span>
+    <span class="paw paw-2">🐾</span>
+    <span class="paw paw-3">🐾</span>
+    <span class="paw paw-4">🐾</span>
+    <span class="paw paw-5">🐾</span>
+  </div>
+
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-brand">
+        <div class="bot-avatar header-avatar">
+          <span class="dog-icon">🐕</span>
+          <span class="online-dot"></span>
+        </div>
+        <div class="header-info">
+          <h1>DogBot</h1>
+          <p class="status-text">🟢 Canine Expert • Online</p>
+        </div>
+      </div>
+      <button id="theme-toggle" type="button" aria-label="Toggle dark mode">🌙</button>
+    </header>
+
+    <!-- Chip suggestions -->
+    <div class="chip-bar" id="chip-bar">
+      <button class="chip" data-text="Apa makanan terbaik untuk anjing saya?">🍖 Nutrisi</button>
+      <button class="chip" data-text="Bagaimana cara melatih toilet training anjing?">🚽 Toilet Training</button>
+      <button class="chip" data-text="Anjing saya sering menggonggong, apa penyebabnya?">🔊 Gonggongan</button>
+      <button class="chip" data-text="Berapa kali anjing perlu dimandikan?">🛁 Grooming</button>
+      <button class="chip" data-text="Kapan anjing perlu divaksinasi?">💉 Vaksin</button>
+    </div>
+
+    <!-- Chat box -->
+    <main id="chat-box" class="chat-box" role="log" aria-live="polite" aria-label="Chat messages"></main>
+
+    <!-- Input form -->
+    <form id="chat-form" class="chat-form" autocomplete="off">
+      <input
+        type="text"
+        id="user-input"
+        placeholder="Tanyakan seputar anjing Anda..."
+        autocomplete="off"
+        required
+        aria-label="Ketik pesan"
+      />
+      <button type="submit" id="send-btn" aria-label="Kirim pesan">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+          <path d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z"/>
+        </svg>
+      </button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
